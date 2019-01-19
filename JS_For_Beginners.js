@@ -33,3 +33,33 @@ var value = 42;
 
 var value;
 value = 42;
+
+/*
+*
+* PRIMITIVE TYPES
+* ---------------
+* Specifies what possible values that can be assigned to the 'var'?
+* Number
+* String
+* Boolean
+*
+*/
+
+/*
+*
+* DATA TYPE - NUMBER
+* ------------------
+* The numbers in JavaScript are different from Java. 
+* Basically, every number in JavaScript is a double-precision 64-bit value.
+* This means that JS does not have the contept of 'integers'
+*
+*/
+
+var a = 10;
+console.log(a);
+
+var b = 20;
+console.log(b);
+
+console.log(a+b);
+
