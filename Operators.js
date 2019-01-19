@@ -90,10 +90,197 @@ console.log(typeof aa);
 var a = 10;
 var b = 10;
 
-if (a==b) {
+if (a == b) {
   console.log("Values are equal!");
 }
 
 /*
 * output: Values are equal!
 */
+
+var a = 10;
+var b = "10";
+
+if (a == b) {
+  console.log("Values are equal!");
+}
+
+/*
+* output: Values are equal!
+*/
+
+/*
+* 
+* PROBLEMS WITH == OPERATOR
+* -------------------------
+* When == was designed in JS, it was made super friendly. 
+* If one of the values can be automatically type-converted, do it and then check if they are equal. 
+* Dping so, one of the 10 is converted to a string thereby making 'a' and 'b' equal. 
+* Unfortunately, that's now how the developers expect it to work.
+* This couldn't be changed as the language has already rolled out and doing so would break many other areas. 
+*
+*/
+
+/*
+* 
+* INTRODUCTION OF === OPERATOR
+* ----------------------------
+* To tackle the above mentioned problem. the "===" operator was introduced in JavaScript.
+* Basically, it doesn't do any type conversions and then compare the two values as it is. 
+* That way, the "===" operator helps the developers achieve what they want to.
+*
+*/
+
+var a = 10;
+var b = "10";
+
+if (a === b) {
+  console.log("Values are equal!");
+} else {
+  console.log("Values are not equal!");
+}
+
+/*
+* output: Values are not equal!
+*/
+
+/*
+* 
+* PASSING A VALUE TO AN IF BLOCK
+* -------------------------------
+* In case of Numbers, '0' is false. All non-zero numbers (including negatives) are 'true'
+* In case of String, 'null' is false. Any non-empty String is true.
+* Undefined and Null are false.
+* For Boolean, it is apparent. True is true and False is false.
+*/
+
+/*
+* NUMBER
+*/
+
+var a = 0;
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is Falsel!
+*/
+
+var a = 10;
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is True!
+*/
+
+var a = -20;
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is True!
+*/
+
+/*
+* STRING
+*/
+
+var a = "Hello";
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is True!
+*/
+
+var a = "";
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is False!
+*/
+
+/*
+* BOOLEAN
+*/
+
+var a = true;
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is True!
+*/
+
+var a = false;
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is False!
+*/
+
+/*
+* UNDEFINED
+*/
+
+var a;
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is False!
+*/
+
+
+/*
+* NULL
+*/
+
+var a = null;
+
+if (a) {
+  console.log("Value is True!");
+} else {
+  console.log("Values is False!");
+}
+
+/*
+* output: Values is False!
+*/
+
+
