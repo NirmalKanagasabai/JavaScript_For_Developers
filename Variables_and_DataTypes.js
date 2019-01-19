@@ -42,6 +42,8 @@ value = 42;
 * Number - Used to represent numbers
 * String - Used to represent text
 * Boolean
+* undefined
+* null
 *
 */
 
@@ -95,6 +97,7 @@ console.log(e);
 /*
 * 
 * LOOSE TYPING
+* ------------
 * The variable handling is unique. There is no type information associated with a variable.
 * i.e., in our previous example, we cannot say if 'a' is a number variable. All that we can say is, 'a' is a variable that currently holds a number.
 */
@@ -108,4 +111,86 @@ console.log(a);
 * This process is called, 'Loose Typing'.
 *
 */
+
+/*
+*
+* DATA TYPE - UNDEFINED
+* ---------------------
+* Declaration - When you ask the compiler/interpreter to create a variable and give it a name
+* Eg., int foo; var value;
+* 
+* Definition - When a value is assigned to the variable.
+* E.g., foo = 42; value = "Hello";
+*
+* Declarations of variables happen before definition (although these two can be done together e.g., var value = "Hello").
+* Hence, once declared, a type and a value is assigned to the variable. 
+* i.e., var value corresponds to a variable of type, 'undefined' and value 'undefined'.
+* This type and value holds until a new value is assigned to it. 
+*
+*/
+
+var value;
+console.log(value);
+
+/*
+* output: undefined
+*/
+
+value = false;
+console.log(value);
+
+/*
+* output: false
+*/
+
+/*
+*
+* DATA TYPE - NULL
+* ---------------------
+* NULL, similar to UNDEFINED, has only one value, 'null'.
+* 
+* Null and Undefined can be a little confusing for beginners. 
+* Take a simple example of a form where you need to fill out, 'First Name', 'Middle Name' and 'Last Name'.
+* A lot of people don't have middle name. They can either leave it 'empty' or write, 'Not Applicable'.
+* If it is left empty, the developers do not know whether the field is overlooked or it is not applicable. 
+* For the sake of simplicity and to differentiate between these two categories, 
+* if the value hasn't been provided at all, it becomes 'undefined', if 'Not Applicable' is selected, then, the value is 'null'.
+*
+*/
+
+var a;
+console.log(a);
+
+/*
+* output: undefined
+*/
+
+a = null;
+console.log(a);
+
+/*
+* output: null
+*/
+
+/*
+*
+* DATA TYPE - SYMBOL
+* ------------------
+* In addition to the above mentioned data-types, ECMAScript 6 also includes, 'Symbol'.
+* Symbol is similar to (enumerations) enums in Java. Bunch of values / constants and the variables can be one of those values. 
+* Not a lot of browsers support this (as of now!).
+*
+*/
+
+/*
+*
+* DATA TYPES - SUMMARY
+* --------------------
+* No need to declare variable type. Simply the 'var' keyword and give it a name. 
+* The same variable can be assigned values of different types. For instance, undefined -> Number -> String
+* No scoping information of the variables. i.e, no private / public for variables.
+* Variables and values can be 'interrogated!'
+*
+*/
+
 
