@@ -148,9 +148,9 @@ if (a === b) {
 * 
 * PASSING A VALUE TO AN IF BLOCK
 * -------------------------------
-* In case of Numbers, '0' is false. All non-zero numbers (including negatives) are 'true'
+* In case of Number, '0' is false. All non-zero numbers (including negatives) are 'true'
 * In case of String, 'null' is false. Any non-empty String is true.
-* Undefined and Null are false.
+* 'Undefined' and 'Null' are false.
 * For Boolean, it is apparent. True is true and False is false.
 */
 
@@ -283,4 +283,12 @@ if (a) {
 * output: Values is False!
 */
 
-
+/*
+* 
+* TYPE COERCION - SUMMARY
+* -----------------------
+* JavaScript is "flexible" with typing
+* Values of all types have an associated boolean value (refer to the section, 'passing values to an if-block')
+* Always use "===" for precise checks (without type coercion)
+*
+*/
