@@ -12,3 +12,24 @@
 */
 
 console.log("Hello World!");
+
+/*
+*
+* VARIABLE DECLARATION
+* --------------------
+* Declare the variable and then assign a value to it. 
+* Pretty similar to Java. However, there is one big difference.
+* If you are to observe the example below, the command does not specify what type the variable is. 
+* Be it an 'int' or 'float' or any other data type, the developers do not mention it.
+* JavaScript, however, figures out the data type of the variable. 
+* No pre-declaration of type required while creating a variable. 
+* JS does not require Typed-Variable!
+*
+*/
+
+var value = 42;
+
+/* or */
+
+var value;
+value = 42;
