@@ -58,3 +58,42 @@ console.log(typeof aa);
 * The type of 'null' should ideally be 'null' but in the initial implementation, they chose the typeof 'null' is an 'object'.
 *
 */
+
+/*
+*
+* TYPE COERCION
+* -------------
+* Where there are operations performed on variables that declared with and assigned to values. 
+* The interpreter/compiler needs to do some automatic type conversions for the operations to work.
+* This is called, 'Type Coercion'. 
+* E.g., Concatenation of String Values. 
+*
+*/
+
+/* 
+* 123 + "4"
+*/
+
+/*
+* output: 1234 and not 127 because 4 is a string and not a number. 
+*/
+
+/*
+*
+* == OPERATOR
+* -----------
+* "=" is used for Assignment Operation. Common across many programming languages. 
+* "==" is used for comparing two values if they are equal. 
+*
+*/
+
+var a = 10;
+var b = 10;
+
+if (a==b) {
+  console.log("Values are equal!");
+}
+
+/*
+* output: Values are equal!
+*/
