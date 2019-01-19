@@ -49,3 +49,12 @@ JavaScript has the capability to modify the DOM tree based on the commands that 
     - Only one command is executed at a time
 - Browser -> Developer Tools -> ScratchPad
     - Multiple commands (a bunch of code) is executed at a time
+    
+**Concepts Discussed:**
+
+- Variable Declaration
+- Primitive Data Types
+    - Number
+    - String
+    - Boolean
+- Loose Typing
