@@ -223,9 +223,76 @@ console.log(myObject4[propertyName]);
 * output: new Property
 */
 
-
 /*
 *
 * This is because, the interpreter does not find a property with the name, 'propertyName'
 * 
 */
+
+/*
+*
+* OBJECT - REFERENCE TO MEMORY LOCATION
+* -------------------------------------
+* In most programming languages, an object is a reference to the memory location on the heap. 
+* Similar to heap, there is a memory location allocated for the object in thr browser.
+* When an object is declared, the memory is allocated and the variables are pointing to that allocated memory.
+*
+*/
+
+var myObject5 = myObject4;
+
+/*
+*
+* This means that we can have another object (or, any number of objects) pointing to the same allocated memory location as that of the first object. 
+*
+*/
+
+/*
+*
+* NESTED OBJECTS
+* --------------
+* Similar to Java, "Objects" of a class are instances of another class.
+*
+*/
+
+var myObject6 = {
+  "outerProp1": "outer property one",
+  "outerProp2": 2,
+  "outerProp3": false,
+  "objectProperty": {
+    "innerProp1": "inner property one",
+    "innerProp2": 22,
+    "innerProp3": true
+  }
+};
+
+console.log(myObject6);
+
+/*
+* output: Object { outerProp1: "outer property one", outerProp2: 2, outerProp3: false, objectProperty: {…} }
+*/
+
+console.log(myObject6.objectProperty);
+
+/*
+* output: Object { innerProp1: "inner property one", innerProp2: 22, innerProp3: true }
+*/
+
+console.log(myObject6.objectProperty.innerProp1);
+
+/*
+* output: inner property one
+*/
+
+console.log(myObject6["objectProperty"]);
+
+/*
+* output: Object { innerProp1: "inner property one", innerProp2: 22, innerProp3: true }
+*/
+
+console.log(myObject6["objectProperty"].innerProp1);
+
+/*
+* output: inner property one
+*/
+
