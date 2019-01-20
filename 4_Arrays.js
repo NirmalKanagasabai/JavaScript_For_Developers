@@ -73,8 +73,12 @@ length: 5
 */
 
 /*
+*
 * LENGTH OF ARRAY
 * ---------------
+* Length doesn't count how many elements you have in the array.
+* It counts the index of the last element (Greatest element) and adds one to it.
+*
 */
 
 console.log(myArray.length);
@@ -83,4 +87,48 @@ console.log(myArray.length);
 * output: 5
 */
 
+console.log(delete myArray.length);
 
+/*
+* output: false
+*/
+
+/*
+* DELETING THE FIRST ELEMENT FROM THE ARRAY
+* -----------------------------------------
+*/
+
+delete myArray[0];
+
+console.log(myArray);
+
+/*
+* Array(5) [ <1 empty slot>, 200, 300, 400, "Hello" ]
+*/
+
+/*
+* It is to be noted that the array elements aren't re-arranged. 
+*/
+
+/*
+* What if there are non-numbered indices to the array?
+*/
+
+myArray["foo"] = "non-number";
+
+console.log(myArray);
+
+/*
+* output: Array(5) [ <1 empty slot>, 200, 300, 400, "Hello" ]
+1: 200
+2: 300
+3: 400
+4: "Hello"
+foo: "non-number"
+length: 5
+*/
+
+/*
+* It is to be noted that the item just sits there at the end of the array.
+* The length of the array hasn't increased at all.
+*/
