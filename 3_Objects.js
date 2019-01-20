@@ -95,7 +95,31 @@ console.log(myObject2);
 */
 
 /*
+*
 * 'OBJECT in JAVA' vs. 'OBJECT IN JAVASCRIPT'
 * -------------------------------------------
-* 
+* We don't have a structure in JS.
+* In C++/Java, there are accessor limitations (Public/Private/Protected). JS do not have any accessor limitations.
+* No option to control if a property of an object is public/private. All properties are accessible by anybody.
+* If you access a property which doesn't exist, in case of C++/Java, the compiler checks and throws out an error.
+* In case of JS, the error isn't thrown. It just gives the user, 'undefined'.
+*
+*/
+
+console.log(myObject2.prop4);
+
+/*
+* output: undefined
+*/
+
+/*
+*
+* CHARACTERISTICS OF JAVASCRIPT OBJECTS
+* -------------------------------------
+* Free-form and is not bound to a class.
+* Object literal notation is used to create objects - Curly braces with no/one or more properties.
+* Object properties can be accessed directly. No accessor limitations.
+* New properties can be added to the objects on the go (as and when they are needed).
+* Objects can have methods - Concept of functions.
+*
 */
