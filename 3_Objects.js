@@ -123,3 +123,107 @@ console.log(myObject2.prop4);
 * Objects can have methods - Concept of functions.
 *
 */
+
+var employee = {
+  firstName: "Nirmal",
+  lastName: "Kanagasabai",
+  ID: 112233,
+  isPermanent: true
+}
+
+/*
+*
+* DOT NOTATION
+* ------------
+* Used to access the property of an object.
+*
+*/
+
+console.log("Printed using Dot Notation");
+
+console.log("Employee Details");
+console.log("----------------");
+
+console.log("Name :" + employee.firstName + " "+ employee.lastName);
+console.log("ID: " + employee.ID);
+console.log("isPermanent: " + employee.isPermanent);
+
+/*
+*
+* SQUARE BRACKET ([ ]) NOTATION
+* -----------------------
+* Another way to access the property of an object.
+*
+*/
+console.log("Printed using Square Bracket Notation");
+
+console.log("Employee Details");
+console.log("----------------");
+
+console.log("Name :" + employee["firstName"] + employee["lastName"]);
+console.log("ID: " + employee["ID"]);
+console.log("isPermanent: " + employee["isPermanent"]);
+
+/*
+*
+* WHEN TO USE DOT & [ ] NOTATIONS?
+* -------------------------------------------
+* Square Bracket notations are used in scenarios where dot notations don't work.
+* Example scenarios:
+* Property name is invalid or a reserved keyword
+* Property name is a number
+* Property name is dynamic
+*
+* P.S.: It is important to know that the interpreter can optimize DOT notations and not [ ] notations.
+* This is because, the engine does not know what property is going to be accessed until the last minute. 
+* In case of DOT notation, it is relatively faster because of optimizations.
+*
+*/
+
+var myObject4 = {
+  "newProp": "new Property",
+  "1": "one"
+}
+
+/*
+* console.log(myObject4.1);
+*/
+
+/*
+Exception: SyntaxError: missing ) after argument list
+@Scratchpad/1:184
+*/
+
+console.log(myObject4[1]);
+
+/*
+* output: one
+*/
+
+/*
+*
+* In the above example, though we access the property using the regular method (dot notation), an exception is thrown.
+* The same can be accessed using [ ] operator.
+*
+*/
+
+var propertyName = "newProp";
+
+console.log(myObject4.propertyName);
+
+/*
+* output: undefined
+*/
+
+console.log(myObject4[propertyName]);
+
+/*
+* output: new Property
+*/
+
+
+/*
+*
+* This is because, the interpreter does not find a property with the name, 'propertyName'
+* 
+*/
