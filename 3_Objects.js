@@ -73,3 +73,29 @@ console.log("Number property on the object: " + myObject.prop2);
 /*
 * output: Number property on the object: 123
 */
+
+/*
+*
+* OBJECT LITERAL
+* --------------
+* Rather than creating an empty object, we can have a complete value to the object initialized up-front.
+*
+*/
+
+var myObject2 = {
+  "prop": "Hello",
+  "prop2": 123,
+  "prop3": true
+}
+
+console.log(myObject2);
+
+/*
+* output: Object { prop: "Hello", prop2: 123, prop3: true }
+*/
+
+/*
+* 'OBJECT in JAVA' vs. 'OBJECT IN JAVASCRIPT'
+* -------------------------------------------
+* 
+*/
