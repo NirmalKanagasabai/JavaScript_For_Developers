@@ -178,6 +178,8 @@ console.log("isPermanent: " + employee["isPermanent"]);
 * This is because, the engine does not know what property is going to be accessed until the last minute. 
 * In case of DOT notation, it is relatively faster because of optimizations.
 *
+* Dot and [ ] notations can be interchanged.
+* 
 */
 
 var myObject4 = {
