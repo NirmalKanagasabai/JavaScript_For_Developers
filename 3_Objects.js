@@ -296,3 +296,95 @@ console.log(myObject6["objectProperty"].innerProp1);
 * output: inner property one
 */
 
+/*
+*
+* REVISITING === OPERATOR FOR JS OBJECTS
+* --------------------------------------
+* As it has been mentioned on some of the above examples, two objects can refer to the same allocated memory location.
+* Hence, upon comparison, these two objects are considered equal.
+*
+*/
+
+var myObject7 = {
+  "newProperty": "new Property"
+}
+
+var myObject8 = myObject7;
+
+if (myObject7 == myObject8) {
+  console.log("The two objects are equal");
+}
+
+/*
+* output: The two objects are equal
+*/
+
+if (myObject7 === myObject8) {
+  console.log("The two objects are equal");
+}
+
+/*
+* output: The two objects are equal
+*/
+
+/*
+*
+* REVISITING UNDEFINED vs. NULL FOR JS OBJECTS
+* --------------------------------------------
+* Not initializing a value vs. Initializing a null value.
+* If you refer to property of an object and the property doesn't exist, the value that you get back is, 'undefined'.
+*
+*/
+
+var person = {
+  "firstName": "Nirmal",
+  "middleName": null,
+  "lastName": "Kanagasabai"
+}
+
+console.log(person);
+
+/*
+* output: Object { firstName: "Nirmal", middleName: null, lastName: "Kanagasabai" }
+*/
+
+console.log(person.age);
+
+/*
+* output: undefined
+*/
+
+console.log(person.middleName);
+
+/*
+* output: null
+*/
+
+/*
+*
+* DELETE OPERATOR
+* ---------------
+* delete object.property;
+* Delete is the keyword. 
+*
+*/
+
+var student = {
+  "name": "Nirmal Kanagasabai",
+  "ID": "112233",
+  "age": 25
+}
+
+console.log(student);
+
+/*
+* output: Object { name: "Nirmal Kanagasabai", ID: "112233", age: 25 }
+*/
+
+delete student.age;
+
+console.log(student);
+
+/*
+* output: Object { name: "Nirmal Kanagasabai", ID: "112233" }
+*/
