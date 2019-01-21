@@ -388,3 +388,47 @@ console.log(student);
 /*
 * output: Object { name: "Nirmal Kanagasabai", ID: "112233" }
 */
+
+/*
+*
+* WRAPPER OBJECTS
+* ---------------
+* Q) Is String a primitive? 
+* There is a way to access the length of the String. (Using, string.length)
+* If String were to be a primitive, how can we make use of dot notation?
+* String, Number, Boolean and Symbol. All these primitives have corresponding objects. 
+*
+*/
+
+var greeting = "Hello World!";
+
+console.log(greeting);
+
+/*
+* output: Hello World!
+*/
+
+
+console.log(greeting.length);
+
+/*
+* output: 12
+*/
+
+
+console.log(typeof greeting);
+
+/*
+* output: string
+*/
+
+/*
+*
+* The reason it works is, JS has equivalent objects for each of the primitive data types.
+* i.e., when the string.length were to be called, the input string is taken and is converted to an object. 
+* Once converted, the length property of the object is being called. 
+*
+* This object is temporary. Once the length is accessed, the object is discarded. So, the typeof outputs, 'string'
+*
+*/
+
