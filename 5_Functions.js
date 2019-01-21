@@ -292,3 +292,45 @@ myObject.myMethod();
 /*
 * output: Funtion in Object
 */
+
+/*
+* 
+* DEFAULT FUNCTIONS ARGUMENTS
+* ---------------------------
+* Arguments argument & This argument
+* We get these two out of the box.
+* The Arguments value can be used as an array. It doesn't mean it is an array. Just looks like an array. It is an OBJECT.
+* 
+*/
+
+var sum = function (a, b) {
+  return a + b;
+}
+
+console.log("Sum: " + sum(23, 30));
+
+var displayArguments = function (a, b) {
+  console.log(arguments)
+};
+
+console.log(displayArguments(24, 151, 13115, 361,1321));
+
+/*
+* output: Arguments { 0: 24, 1: 151, 2: 13115, 3: 361, 4: 1321, … }
+*/
+
+var total = 0;
+
+var calculateTotal = function () {
+  for (var i=0; i<arguments.length; i++) {
+    total = total + arguments[i];
+  }
+  
+  return total;
+}
+
+console.log("Total: " + calculateTotal(1,2,3,4,5,6,7,8,9,10));
+
+/*
+* output: Total: 55
+*/
