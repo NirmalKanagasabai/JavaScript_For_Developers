@@ -138,3 +138,69 @@ console.log(returnValue);
 /*
 * output: undefined
 */
+
+/*
+*
+* FUNCTION EXPRESSIONS
+* --------------------
+* Functions in JS are First-Class Values. 
+* Like String is a value and number is a value, the function 'itself' is a value in JS.
+*
+*/
+
+var a = "Hello";
+
+console.log("FUNCTION EXPRESSIONS...");
+
+var f = function foo() {
+  console.log("Hello World!");
+}
+
+f();
+
+/*
+* output: Hello World!
+*/
+
+
+var sum = function addition (a, b) {
+  return a + b;
+}
+
+console.log("Sum: " + sum(23, 52));
+
+/*
+* output: Sum: 75
+*/
+
+console.log("ANONYMOUS FUNCTION EXPRESSIONS...");
+
+
+/*
+* 
+* ANONYMOUS FUNCTIONS
+* -------------------
+* However, it is to be noted that 'foo' and 'addition' isn't used anywhere at all. 
+* Hence, it can be ignored once and for all. 
+* Notice that in the following examples, it is merely function () and the name of the function is removed.
+*/
+
+var f = function () {
+  console.log("Hello World!");
+}
+
+f();
+
+/*
+* output: Hello World!
+*/
+
+var sum = function (a, b) {
+  return a + b;
+}
+
+console.log("Sum: " + sum(23, 52));
+
+/*
+* output: Sum: 75
+*/
