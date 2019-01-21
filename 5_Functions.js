@@ -232,3 +232,65 @@ Exception: TypeError: sum is not a function
 * In here, log() is a function and sum() is another function that is passed as an argument to it. 
 *
 */
+
+var executor = function (fn) {
+  console.log(fn);
+}
+
+executor(f);
+
+
+/*
+* In here, we are merely printing the function. Not executing it. 
+* output: function f()
+*/
+
+var executor2 = function (fn) {
+  fn()
+}
+
+executor2(f);
+
+/*
+* output: "Hello World!"
+*/
+
+var greet = function (name) {
+  console.log("Hello " + name);
+}
+
+var executor3 = function (functionName, argument) {
+  functionName(argument);
+}
+
+executor3 (greet, "Nirmal");
+
+/*
+* output: "Hello Nirmal"
+*/
+
+/*
+* 
+* FUNCTIONS ON OBJECTS
+* --------------------
+* Function as an object property. Equivalent of methods.
+* Generally, the class has member variables and method definitions. We don't have classes here.
+* We have objects which can have properties that can be functions. 
+*
+*/
+
+var myObject = {
+  "testProp": true
+};
+
+myObject.myMethod = function () {
+  console.log("Function in Object");
+};
+
+myObject.myMethod();
+
+/*
+* output: Funtion in Object
+*/
+
+
