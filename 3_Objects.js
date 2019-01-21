@@ -432,3 +432,12 @@ console.log(typeof greeting);
 *
 */
 
+/*
+*
+* GLOBAL OBJECTS
+* --------------
+* Math object (the methods are very useful)
+* Date object (the properties are very handy)
+* 
+*/
+
