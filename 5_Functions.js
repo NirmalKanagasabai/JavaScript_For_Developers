@@ -183,6 +183,7 @@ console.log("ANONYMOUS FUNCTION EXPRESSIONS...");
 * However, it is to be noted that 'foo' and 'addition' isn't used anywhere at all. 
 * Hence, it can be ignored once and for all. 
 * Notice that in the following examples, it is merely function () and the name of the function is removed.
+*
 */
 
 var f = function () {
@@ -203,4 +204,31 @@ console.log("Sum: " + sum(23, 52));
 
 /*
 * output: Sum: 75
+*/
+
+/*
+* 
+* PROBLEMS OF USING ANONYMOUS FUNCTIONS
+* -------------------------------------
+* The problem with anonymous function expressions is that the variable can be re-assigned at some point and the function cannot be used thereafter.
+* i.e., in the above example, if the variable 'sum' is assigned a value of 100, one can no longer pass the arguments to the function. 
+*/
+
+/*
+* sum = 100;
+* console.log("Sum: " + sum(23, 52));
+*/
+
+/*
+Exception: TypeError: sum is not a function
+@Scratchpad/1:219:23
+*/
+
+/*
+* 
+* FUNCTIONS AS ARGUMENTS
+* ----------------------
+* One function can be passed as an argument to another function. The classic example is console.log(sum(23, 52));
+* In here, log() is a function and sum() is another function that is passed as an argument to it. 
+*
 */
