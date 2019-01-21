@@ -41,3 +41,26 @@ console.log(employeeName);
 /*
 * output: Nirmal Kanagasabai
 */
+
+var person2 = employee;
+
+console.log(employee.firstName + " " + employee.lastName);
+console.log(employee.getEmployeeName());
+
+person = {};
+
+/*
+* Now, the person points to a different object. It doesn't have any property associated with it.
+*/
+
+var employee = {
+  "firstName": "Nirmal",
+  "lastName": "Kanagasabai",
+  "getEmployeeName": function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+var person3 = employee;
+
+console.log(person3.getEmployeeName());
