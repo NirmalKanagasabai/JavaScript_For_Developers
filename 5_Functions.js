@@ -292,5 +292,3 @@ myObject.myMethod();
 /*
 * output: Funtion in Object
 */
-
-
