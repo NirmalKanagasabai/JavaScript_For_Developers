@@ -334,3 +334,18 @@ console.log("Total: " + calculateTotal(1,2,3,4,5,6,7,8,9,10));
 /*
 * output: Total: 55
 */
+
+/*
+* 
+* FUNCTIONS - SUMMARY
+* ---------------------------
+* Functions can be written in literal form
+* This is a 'value' that can be assigned to a variable
+* Can be called by passing in arguments
+* FUNCTIONS ARE ALSO OBJECTS!!!
+* Flexible argument count (more than what's needed? ignored. Less than what's needed? undefined.)
+* No function overloading
+* Default arguments
+* The ARGUMENTS argument
+* 
+*/

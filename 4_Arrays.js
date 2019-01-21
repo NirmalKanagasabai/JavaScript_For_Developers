@@ -132,3 +132,110 @@ length: 5
 * It is to be noted that the item just sits there at the end of the array.
 * The length of the array hasn't increased at all.
 */
+
+/*
+*
+* METHODS IN ARRAYS
+* -----------------
+* Push (To add a new element to the array) - This function takes an element and adds that element to the last. 
+* Pop (To remove the last element from the array)
+* Shift - Equivalent of Pop 
+* Unshift - Equivalent of Push
+* 'Push and Pop' work on the rear end of the array
+* 'Shift and Unshift' work on the front end of the array
+*
+*/
+
+var myArray = [10, 20, "Hello", true];
+
+console.log(myArray);
+
+/*
+* output: Array(4) [ 10, 20, "Hello", true ]
+*/
+
+myArray.push(40);
+
+console.log(myArray);
+
+/*
+* output: Array(5) [ 10, 20, "Hello", true, 40 ]
+*/
+
+myArray.pop();
+
+console.log(myArray);
+
+/*
+* output: Array(4) [ 10, 20, "Hello", true ]
+*/
+
+myArray.shift();
+
+console.log(myArray);
+
+/*
+* output: Array(3) [ 20, "Hello", true ]
+*/
+
+myArray.unshift(55);
+
+console.log(myArray);
+
+/*
+* output: Array(4) [ 55, 20, "Hello", true ]
+*/
+
+/*
+*
+* FOR EACH METHOD - ARRAY
+* -----------------------
+* Takes in a function as an argument.
+* For each element on the array, this function is executed. 
+*
+*/
+
+var myArrayToDemoForEach = [10, 20, "Hello", {}, true];
+
+var myFunction = function () {
+  console.log("For an element");
+};
+
+myArray.forEach(myFunction);
+
+/*
+* output: For an element              <<loaded 4 times>>
+*/
+
+/*
+*
+* FOR EACH METHOD - PASSING THE ELEMENT OF THE ARRAY AS AN ARGUMENT TO THE FUNCTION
+* ---------------------------------------------------------------------------------
+* The ForEAch method does exactly that. We didn't make use of it previously.
+*
+*/
+
+var numberArray = [10, 20, 30, 40, 50];
+
+var calculateTotal = function(newNumber) {
+  var total;
+  console.log("New Element: " + newNumber);
+  total = total + newNumber;
+  return total;
+}
+
+var finalTotal = numberArray.forEach(calculateTotal);
+console.log(finalTotal);
+
+numberArray.forEach(function (item, index, array) {
+   console.log(item, index);           
+});
+
+/*
+* output: 
+10 0
+20 1
+30 2
+40 3
+50 4
+*/
