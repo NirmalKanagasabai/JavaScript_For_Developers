@@ -1,4 +1,4 @@
-# JavaScript_For_Beginners
+# JavaScript_For_Developers
 This repository was built to experiment with fundamentals of JavaScript and understanding the nuances of the language. This work was inspired by [JavaBrains.io](https://www.youtube.com/watch?v=s6R0VEdoVt4&list=PLqq-6Pq4lTTYFJxC9NLJ7dSTI5Z1WWB6K)'s, 'JavaScript for Developers' course :) 
 
 **JavaScript (JS)**
