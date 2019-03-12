@@ -21,8 +21,8 @@ This repository was built to experiment with fundamentals of JavaScript and unde
 > HTML —> [Browser] —> Static DOM Tree 
 
 Basically, the HTML is provided as an input ‘Document’ to the run-time environment (Browser).
-This browser reads the document and once it comes across different tags like html, body, etc., it creates objects for each and everyone of them. 
-So, a <div> tag and a <p> tag creates two different objects with the <div> object being the parent and <p> object being the child causing the end result is a tree of objects. Hence, called as “DOM” tree 
+This browser reads the document and once it comes across different tags like 'html', 'body', etc., it creates objects for each and everyone of them. 
+So, a 'div' tag and a 'p' tag creates two different objects with the 'div' object being the parent and 'p' object being the child causing the end result is a tree of objects. Hence, called as “DOM” tree 
 
 > HTML + JavaScript —> [Browser] —> Dynamic DOM Tree
 
