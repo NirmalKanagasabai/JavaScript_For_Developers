@@ -5,7 +5,7 @@ This repository was built to experiment with fundamentals of JavaScript and unde
 
 - Scripting language (Set of commands put up on a script file and is built for a run-time environment - Browser)
 - Interpreted. Not compiled.
-- Object-Oriented (Modelled around objects)
+- Object-Based (Modelled around objects)
 - First-Class Functions (Functional Prog.)
 - Runs on Browser (Run-Time Environment)
 - Lightweight (Low memory footprint, Easy to implement)
